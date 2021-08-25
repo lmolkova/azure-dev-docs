@@ -55,7 +55,7 @@ Avoid downgrading Azure SDK version to match dependency versions - this may expo
 
 #### Shading
 
-In some cases, there is no reasonable combination of libraries that can work together and or application may depend on specific version  and changing its code is not possible.
+In some cases, there is no reasonable combination of libraries that can work together or application may depend on specific version, while changing its code is not possible.
 One way of resolving this issue is to introduce a 'shaded JAR' - a single jar file including the library code, as well as the code of all of its dependencies, with the dependency package names renamed into a different namespace to avoid conflicts. Note that this approach only resolves conflicts and does not address known vulnerabilities issues.
 
 Create wrapper package applicable to your scenario:
