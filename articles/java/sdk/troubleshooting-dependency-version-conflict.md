@@ -38,9 +38,9 @@ Note that dependency resolution in development and production environments may w
 
 Since Azure Core 1.20.0-beta.1 we added runtime detection of Jackson version.
 
-- In case of `LinkageError` (any of its subclasses) exception related to Jackson API, check message of the exception for runtime version information.</br>Example: `com.azure.core.implementation.jackson.JacksonVersionMismatchError: com/fasterxml/jackson/databind/cfg/MapperBuilder Package versions: jackson-annotations=2.9.0, jackson-core=2.9.0, jackson-databind=2.9.0, jackson-dataformat-xml=2.9.0, jackson-datatype-jsr310=2.9.0, azure-core=1.19.0-beta.2`
+- In case of `LinkageError` (any of its subclasses) exception related to Jackson API, check message of the exception for runtime version information.</br>*Example*: `com.azure.core.implementation.jackson.JacksonVersionMismatchError: com/fasterxml/jackson/databind/cfg/MapperBuilder Package versions: jackson-annotations=2.9.0, jackson-core=2.9.0, jackson-databind=2.9.0, jackson-dataformat-xml=2.9.0, jackson-datatype-jsr310=2.9.0, azure-core=1.20.0-beta.1`
 
-- Look for warning/error [logs](https://docs.microsoft.com/azure/developer/java/sdk/logging-overview) from `JacksonVersion`.</br>Example: `[main] ERROR com.azure.core.implementation.jackson.JacksonVersion - Version '2.9.0' of package 'jackson-core' is not supported (too old), please upgrade.`
+- Look for warning/error [logs](https://docs.microsoft.com/azure/developer/java/sdk/logging-overview) from `JacksonVersion`.</br>*Example*: `[main] ERROR com.azure.core.implementation.jackson.JacksonVersion - Version '2.9.0' of package 'jackson-core' is not supported (too old), please upgrade.`
 
 ### Mitigation
 
