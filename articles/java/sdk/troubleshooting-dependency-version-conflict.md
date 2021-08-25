@@ -68,7 +68,7 @@ Create wrapper package applicable to your scenario:
 Example of shading Jackson libraries under a new JAR with Maven:
 
 - Use [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/).
-- Create a new package that would wrap or Jackson libraries themselves if your application needs older version
+- Create a new package that would wrap Jackson libraries themselves if your application needs older version
 - Configure shading plugin:
 
 ```xml
