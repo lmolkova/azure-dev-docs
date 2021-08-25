@@ -25,7 +25,7 @@ Behavior changes are more subtle and don't have common symptoms.
 
 #### Dependency tree
 
-Run `mvn dependency:tree` or `gradle dependencies — scan` to show full dependency tree with versions. (Note: `mvn dependency:tree -Dverbose` gives more information, but [may  be misleading](https://maven.apache.org/shared/maven-dependency-tree/)). Notice versions of library you suspect has version conflic and check which components depends on it.
+Run `mvn dependency:tree` or `gradle dependencies — scan` to show full dependency tree with versions. (Note: `mvn dependency:tree -Dverbose` gives more information, but [may  be misleading](https://maven.apache.org/shared/maven-dependency-tree/)). When you suspect version conflict for some library, notice if multiple versions of it are detected and which components depend on it.
 
 Note that dependency resolution in development and production environments may work differently. Here are some known environments with custom dependency resolution and/or need extra configuration for user-defined dependencies. Please check out corresponding project dependency management documentation.
 
